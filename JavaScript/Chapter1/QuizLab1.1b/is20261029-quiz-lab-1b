@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PageTurner Bookstore - Promotion Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            max-width: 500px;
+            width: 90%;
+        }
+        
+        h1 {
+            color: #2d3748;
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .subtitle {
+            color: #718096;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+        
+        .promo-box {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .promo-text {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        
+        .result-box {
+            background: #f7fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        .console-text {
+            font-family: 'Courier New', monospace;
+            background: #1a202c;
+            color: #68d391;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PageTurner</h1>
+        <p class="subtitle">Modern Bookstore Experience</p>
+        
+        <div class="promo-box">
+            <div class="promo-text">Buy 3 Books, Get 1 FREE!</div>
+        </div>
+        
+        <div class="result-box">
+            <p><strong>Check the browser console (F12) to see your promotion results!</strong></p>
+            <div class="console-text" id="results">
+                Results will appear here...
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+        let totalBooks = 10;       
+        let freeBooks = totalBooks % 3;
+        let paidSets = Math.floor(totalBooks / 3); 
+        let paidBooks = totalBooks - freeBooks;
+        
+        console.log("PageTurner Promotion Calculator");
+        console.log("Total books purchased: " + totalBooks);
+        console.log("Complete sets of 3: " + paidSets);
+        console.log("Books you pay for: " + paidBooks);
+        console.log("FREE books you get: " + freeBooks);
+        console.log("You saved money on " + freeBooks + " books!");
+        
+        // Display results on webpage too
+        document.getElementById('results').innerHTML = 
+            "Purchase Summary:<br>" +
+            "• Total books: " + totalBooks + "<br>" +
+            "• Books you pay for: " + paidBooks + "<br>" +
+            "• FREE books: " + freeBooks + "<br>" +
+            "• Money saved: " + freeBooks + " books!";
+    </script>
+</body>
+</html>
