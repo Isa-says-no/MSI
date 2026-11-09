@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PageTurner Bookstore - Order System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="is20261109-quiz-lab-2-css.css">
+    <script src="is20261109-quiz-lab-2-js.js" defer></script>
+</head>
+<body onload="LoadFunc();">
+    <div class="container">
+        <h1>PageTurner Order System</h1>
+        
+        <div class="order-info">
+            <h3>Current Order Status</h3>
+            <p>Check the console (F12) to see debugging information!</p>
+        </div>
+        
+        <div class="error-box">
+            <strong>Known Issues:</strong>
+            <ul>
+                <li>Book total shows "NaN"</li>
+                <li>Customer name appears before it's defined</li>
+                <li>Tax rate keeps changing unexpectedly</li>
+            </ul>
+        </div>
+        
+        <div class="success-box" id="results">
+            <strong>Fixed Results:</strong>
+            <p>Results will appear here after debugging...</p>
+        </div>
+    </div>
+
+</body>
+</html>
