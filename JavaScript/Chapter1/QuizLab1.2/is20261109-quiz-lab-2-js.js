@@ -1,4 +1,4 @@
-
+function LoadFunc() {
 console.log("Starting PageTurner Order System Debug Session");
 let customerName = "Sarah Johnson";
 // BUG 1: Using variable before declaration
@@ -49,3 +49,4 @@ if (isNaN(total)) {
 }
         
 console.log("Debug session complete!");
+}
