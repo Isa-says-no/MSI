@@ -1,0 +1,5 @@
+body { font-family: Arial, sans-serif; max-width: 800px; margin: 20px auto; padding: 20px; }
+.container { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+h1 { color: #2d3748; text-align: center; }
+.debug-output { background: #1a202c; color: #68d391; padding: 20px; border-radius: 10px; font-family: monospace; margin: 20px 0; line-height: 1.5; }
+.input-section { background: #f7fafc; padding: 20px; border-radius: 10px; margin: 20px 0; }
